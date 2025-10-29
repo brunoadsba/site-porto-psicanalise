@@ -6,12 +6,12 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description, icon }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-indigo-200">
-      <div className="text-5xl mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold text-gray-900 mb-3">
+    <div className="bg-white rounded-xl px-10 py-9 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-indigo-300">
+      <div className="text-5xl mb-6 text-center">{icon}</div>
+      <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
         {title}
       </h3>
-      <p className="text-gray-600 leading-relaxed">
+      <p className="text-gray-600 leading-loose">
         {description}
       </p>
     </div>
