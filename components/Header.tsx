@@ -29,12 +29,12 @@ export default function Header() {
           <span className="text-xl font-semibold text-gray-900">Psicanálise</span>
         </Link>
 
-        <div className="hidden md:flex md:items-center md:space-x-8">
+        <div className="hidden md:flex md:items-center md:space-x-10">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`relative px-3 py-2 text-sm font-medium transition-colors hover:text-indigo-600 ${
+              className={`relative px-4 py-2 text-base font-medium transition-colors hover:text-indigo-600 ${
                 isActive(item.href)
                   ? "text-indigo-600"
                   : "text-gray-700"
@@ -48,7 +48,7 @@ export default function Header() {
           ))}
           <Link
             href="/agendamento"
-            className="rounded-full bg-indigo-600 px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700"
+            className="rounded-full bg-indigo-600 px-8 py-2.5 text-base font-semibold text-white transition-colors hover:bg-indigo-700 shadow-md hover:shadow-lg"
           >
             Agendar
           </Link>
